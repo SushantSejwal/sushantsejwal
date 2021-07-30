@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+/* font-family: 'Noto Sans JP', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400&display=swap');
+/* font-family: 'Hind Siliguri', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(to right, #707070, #666666, #5C5C5C, #525252, #474747, #3D3D3D, #333333, #292929, #1F1F1F, #0A0A0A, #0A0A0A, #1F1F1F, #292929, #333333, #3D3D3D, #474747, #525252, #5C5C5C, #666666, #707070);
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    letter-spacing: 1px;
+    margin: 7px 45px 7px 25px;
+}
+
+.logo a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(224, 224, 224);
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+}
+
+.logo a:hover {
+    color: white;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-list .list-items {
+    margin: 8.5px 8px 4px 8px;
+}
+
+.nav-list .ul-li {
+    display: flex;
+}
+
+.list-items a {
+    color: rgb(224, 224, 224);
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.list-items a:hover {
+    color: white;
+    font-weight: 500;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.toggle-btn .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .toggle-btn {
+        display: flex;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-list .ul-li {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: .5rem 0rem .5rem .1rem;
+    }
+
+    .ul-li.active {
+        display: flex;
+    }
+
+
+    .nav-list .logo {
+        text-align: center;
+    }
+
+    .nav-list .logo a{
+        display: inline-block;
+    }    
+
+    .list-items a {
+        font-size: 15px;
+    }
+
+    .logo {
+        font-size: 1.9rem;
+    }
+
+}

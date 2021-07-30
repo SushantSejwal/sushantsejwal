@@ -1,0 +1,386 @@
+html {
+    background-color: rgb(194, 194, 194);
+    scroll-behavior: smooth;
+
+}
+
+/* ============================= ALL SECTIONS ==================================================== */
+
+section {
+    background-color: rgb(235, 235, 235);
+    text-align: justify;
+}
+
+section p {
+    padding: 5px 0px 10px 0px;
+}
+
+/* ============================================== EXTRA =========================================== */
+
+hr {
+    width: 90%;
+    margin: 15px auto;
+
+}
+
+/* ========================================== HOME SECTION ============================================= */
+
+.home-sec {
+    color: rgb(250, 250, 250);
+    text-align: center;
+    padding: 100px 0px 80px 0px;
+    width: 100%;
+    background-image: linear-gradient(to right, #012E51, #014579, #025CA1, #014579, #012E51);
+}
+
+.home-sus-heading {
+    font-size: 4.5rem;
+    text-shadow: 5px 5px 20px black;
+
+}
+
+.home-sus-paragraph {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+
+/* ==================================== ABOUT SECTION ================================================= */
+
+.about-sec {
+    padding: 20px 20px 20px 20px;
+    margin: 20px 10px 20px 10px;
+    border-radius: 20px;
+
+}
+
+.about-sec h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+
+.about-sec div {
+    padding: 20px 20px 20px 20px;
+    margin: 10px 0px 20px 0px;
+}
+
+.about-sec p {
+    font-size: 18px;
+}
+
+.about-sec .know-of-loco .wdg4-loco {
+    text-align: center;
+}
+
+.about-sec .know-of-loco .wdg4-loco img {
+    border-radius: 20px;
+    width: 50%;
+}
+
+h2,
+h3,
+h4 {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.about-div-sec-start {
+    background-image: linear-gradient(to right, #ffffff, #F5F5F5);
+    border-radius: 40px;
+}
+
+.know-of-loco {
+    background-image: linear-gradient(to right, #FFFFFF, #F5F5F5);
+    border-radius: 40px;
+    height: 50%;
+}
+
+.school-life-start {
+    background-image: linear-gradient(to right, #FFFFFF, #F5F5F5);
+    border-radius: 40px;
+}
+
+.school-8-class {
+    background-image: linear-gradient(to right, #FFFFFF, #F5F5F5);
+    border-radius: 40px;
+}
+
+.school-life-start .school {
+    text-align: center;
+}
+
+.school-life-start .school img {
+    border-radius: 20px;
+}
+
+.school-9-class {
+    background-image: linear-gradient(to right, #FFFFFF, #F5F5F5);
+    border-radius: 40px;
+}
+
+.school-9-class .apple {
+    text-align: center;
+}
+
+.school-9-class .apple img {
+    width: 50%;
+    border-radius: 20px;
+}
+
+.different-from-others {
+    background-image: linear-gradient(to right, #FFFFFF, #F5F5F5);
+    border-radius: 40px;
+}
+
+.my-aim {
+    background-image: linear-gradient(to right, #FFFFFF, #F5F5F5);
+    border-radius: 40px;
+}
+
+.my-aim p {
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+}
+
+.my-aim .anne {
+    text-align: center;
+}
+
+.my-aim .anne img {
+    width: 50%;
+    border-radius: 20px;
+}
+
+
+
+.about-last {
+    text-align: center;
+    max-width: 500px;
+    background-image: linear-gradient(to right, #FFFFFF, #F5F5F5);
+    border-radius: 20px;
+
+}
+
+/* ================================= FRIEND SECTION =================================== */
+
+
+.my-friends {
+    padding: 20px 20px 20px 20px;
+    margin: 20px 10px 20px 10px;
+    border-radius: 20px;
+}
+
+.my-friends .friends-start h2 {
+    font-size: 3rem;
+}
+
+.my-friends p {
+    font-size: 18px;
+}
+
+.my-friends div {
+    padding: 20px 20px 20px 20px;
+    margin: 10px 0px 20px 0px;
+}
+
+.friends-start,
+.my-friend-akshat,
+.my-friend-manogya {
+    background-image: linear-gradient(to right, #FFFFFF, #F5F5F5);
+    border-radius: 40px;
+}
+
+
+.akshat-img {
+    text-align: center;
+}
+
+.akshat-img img {
+    border-radius: 20px;
+    width: 40%;
+}
+
+
+/* ======================================= contact ========================================== */
+
+.contact-sec {
+    padding: 20px 20px 20px 20px;
+    margin: 20px 10px 20px 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.contact-sec .contact-add {
+    background-image: linear-gradient(to right, #FFFFFF, #F5F5F5);
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.contact-sec .contact-add h1 {
+    padding: 10px;
+    font-size: 1.7rem;
+}
+
+.contact-sec .contact-add address {
+    padding: 10px;
+}
+
+.contact-sec .contact-add address a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(0, 122, 255);
+}
+
+.contact-sec .contact-add address a:hover {
+    text-decoration: underline;
+}
+
+
+/* ======================================= footer ========================================= */
+
+footer {
+    background-color: rgb(235, 235, 235);
+    margin: 0px;
+}
+
+footer div {
+    text-align: center;
+    background-image: linear-gradient(to right, #FFFFFF, #F5F5F5);
+
+    padding: 40px 20px 40px 20px;
+}
+
+footer div {
+    font-size: 17px;
+}
+
+
+/* ===================================== Message sushant ================================== */
+
+.send-message-to-sushant {
+    background-color: rgb(235, 235, 235);
+    margin: 20px 10px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.message-all {
+    padding: 20px;
+    margin: 10px 0px 20px;
+    border-radius: 40px;
+    background-image: linear-gradient(to right, #FFFFFF, #F5F5F5);
+}
+
+.message-all .message-sushant h2 {
+    text-align: center;
+    padding: 30px 10px 0px 10px;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.send-message-to-sushant .form-div .form {
+    padding: 20px;
+
+}
+
+.send-message-to-sushant .form-div .form input,
+textarea::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.send-message-to-sushant .form-div .form input[type=text] {
+    width: 90%;
+    padding: 8px 20px;
+    margin: 8px auto;
+    display: block;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+}
+
+.send-message-to-sushant .form-div .form input[type=email] {
+    width: 90%;
+    padding: 8px 20px;
+    margin: 8px auto;
+    display: block;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+}
+
+.send-message-to-sushant .form-div .form textarea {
+    width: 90%;
+    height: 150px;
+    margin: auto;
+    display: block;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px black;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    resize: none;
+    font-size: 16px;
+}
+
+.send-message-to-sushant .form-div .form textarea:focus, input:focus{
+    outline: none;
+}
+
+.send-message-to-sushant .form-div .form button {
+    margin: auto;
+    display: block;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+    border: 1px solid rgb(63, 63, 63);
+    border-radius: 10px;
+}
+
+.send-message-to-sushant .form-div .form button:hover {
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+
+.send-message-to-sushant .form-div .form input[type=submit]:active {
+    background-color: white;
+    color: black;
+}
+
+
+/* ============================== Media query start ============================ */
+
+@media screen and (max-width:800px) {
+    .akshat-img img {
+        width: 100%;
+    }
+
+    .school-9-class .apple img {
+        width: 100%;
+    }
+
+    .about-sec .know-of-loco .wdg4-loco img {
+        width: 100%;
+    }
+
+    .my-aim .anne img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .school-life-start .school img {
+        width: 100%;
+    }
+}
+
+
+/* ============================== Media query end ============================ */
