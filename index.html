@@ -230,41 +230,41 @@
         </div>
     </section>
 
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script>
-        function SubForm() {
-            $.ajax({
-                url: 'https://api.apispreadsheets.com/data/15982/',
-                type: 'post',
-                data: $("#myForm").serializeArray(),
-                success: function () {
-                    alert("your message has been sent to sushant securely")
-                },
-                error: function () {
-                    alert("There was an error :(")
-                }
-            });
-        }
-    </script>
-
-
     <section class="send-message-to-sushant" id="message-me">
         <div class="message-all">
-            <div class="message-sushant"> <h2>Message Me</h2> </div>
+            <div class="message-sushant">
+                <h2>Message Me</h2>
+            </div>
             <div class="form-div">
-                <form id="myForm" method="POST" class="form" autocomplete="off">
-                    <input type="text" name="Name" id="name" required placeholder=" Name"><br>
-                    <input type="email" name="Email" id="email" required placeholder=" Email"><br>
-                    <textarea name="Message" cols="30" rows="10" required
+                <form id="sheetdb-form" action="https://sheetdb.io/api/v1/062ykrea05dnb" method="POST" class="form"
+                    autocomplete="off">
+                    <input type="text" name="data[Name]" id="name" required placeholder=" Name"><br>
+                    <input type="email" name="data[Email]" id="email" required placeholder=" Email"><br>
+                    <textarea name="data[Message]" cols="30" rows="10" required
                         placeholder="type your message and send it"></textarea><br>
-                    <input type="hidden" name="Hidden" value="sushant">
-                    <button onclick="SubForm()">Send it to Sushant</button>
+                    <input type="hidden" name="data[Hidden]" value="sushant">
+                    <button type="submit">Send it to Sushant</button>
                 </form>
             </div>
         </div>
     </section>
+
+
+    <script>
+        var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("sheetdb-form")),
+            }).then(
+                response => response.json()
+            ).then((html) => {
+                // you can put any JS code here
+                alert('success')
+            });
+        });
+    </script>
 
 
     <section class="contact-sec" id="contact">
