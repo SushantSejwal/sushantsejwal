@@ -1,6 +1,11 @@
-html {
-    background-color: rgb(194, 194, 194);
-    scroll-behavior: smooth;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+/* font-family: 'Noto Sans JP', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400&display=swap');
+/* font-family: 'Hind Siliguri', sans-serif; */
+
+body {
+    background-color: rgb(219, 219, 219);
 
 }
 
@@ -9,6 +14,8 @@ html {
 section {
     background-color: rgb(235, 235, 235);
     text-align: justify;
+    max-width: 1920px;
+    margin: auto;
 }
 
 section p {
@@ -18,7 +25,7 @@ section p {
 /* ============================================== EXTRA =========================================== */
 
 hr {
-    width: 90%;
+    width: 95%;
     margin: 15px auto;
 
 }
@@ -26,16 +33,23 @@ hr {
 /* ========================================== HOME SECTION ============================================= */
 
 .home-sec {
+    margin-top: 40px;
     color: rgb(250, 250, 250);
     text-align: center;
     padding: 100px 0px 80px 0px;
     width: 100%;
     background-image: linear-gradient(to right, #012E51, #014579, #025CA1, #014579, #012E51);
+    min-height: 100vh;
+    max-height: auto;
+    display: grid;
+    place-items: center;
+    background-attachment: fixed;
 }
 
 .home-sus-heading {
     font-size: 4.5rem;
     text-shadow: 5px 5px 20px black;
+    margin-bottom: 20px
 
 }
 
@@ -44,12 +58,41 @@ hr {
     padding: 10px;
 }
 
+/* ========================================== HOME SECTION  MEDIA QUERY============================================= */
+
+@media only screen and (max-width:363px) {
+
+    .home-sus-heading {
+        font-size: 4rem;
+    }
+
+}
+
+@media only screen and (max-width:320px) {
+
+    .home-sus-heading {
+        font-size: 3.5rem;
+    }
+
+}
+
+@media only screen and (min-width:1000px) {
+
+    .home-sus-heading {
+        font-size: 6rem;
+    }
+
+    .home-sec {
+        min-height: 50vh;
+    }
+}
+
 
 /* ==================================== ABOUT SECTION ================================================= */
 
 .about-sec {
     padding: 20px 20px 20px 20px;
-    margin: 20px 10px 20px 10px;
+    margin: 20px auto;
     border-radius: 20px;
 
 }
@@ -61,7 +104,7 @@ hr {
 }
 
 .about-sec div {
-    padding: 20px 20px 20px 20px;
+    padding: 10px 25px;
     margin: 10px 0px 20px 0px;
 }
 
@@ -73,9 +116,17 @@ hr {
     text-align: center;
 }
 
-.about-sec .know-of-loco .wdg4-loco img {
-    border-radius: 20px;
-    width: 50%;
+.about-sec .know-of-loco .wdg4-loco .wdg4-loco-img {
+    border-radius: 30px;
+    width: 70%;
+}
+
+@media only screen and (min-width:768px) {
+    
+    .about-sec .know-of-loco .wdg4-loco .wdg4-loco-img {
+        border-radius: 30px;
+        max-width: 100%;
+    }
 }
 
 h2,
@@ -123,8 +174,8 @@ h4 {
     text-align: center;
 }
 
-.school-9-class .apple img {
-    width: 50%;
+.school-9-class .apple .apple-logo {
+    width: 70%;
     border-radius: 20px;
 }
 
@@ -139,8 +190,9 @@ h4 {
 }
 
 .my-aim p {
-    width: 100%;
+    width: 95%;
     padding: 0px 20px 0px 20px;
+    margin: auto;
 }
 
 .my-aim .anne {
@@ -152,22 +204,17 @@ h4 {
     border-radius: 20px;
 }
 
-
-
-.about-last {
+.regular-update{
     text-align: center;
-    max-width: 500px;
-    background-image: linear-gradient(to right, #FFFFFF, #F5F5F5);
-    border-radius: 20px;
-
 }
+
 
 /* ================================= FRIEND SECTION =================================== */
 
 
 .my-friends {
-    padding: 20px 20px 20px 20px;
-    margin: 20px 10px 20px 10px;
+    padding: 25px;
+    margin: 20px auto;
     border-radius: 20px;
 }
 
@@ -177,6 +224,10 @@ h4 {
 
 .my-friends p {
     font-size: 18px;
+}
+
+.life-should-be{
+    text-align: center;
 }
 
 .my-friends div {
@@ -205,8 +256,8 @@ h4 {
 /* ======================================= contact ========================================== */
 
 .contact-sec {
-    padding: 20px 20px 20px 20px;
-    margin: 20px 10px 20px 10px;
+    padding: 25px;
+    margin: 20px auto;
     border-radius: 20px;
     text-align: center;
 }
@@ -261,8 +312,8 @@ footer div {
 
 .send-message-to-sushant {
     background-color: rgb(235, 235, 235);
-    margin: 20px 10px;
-    padding: 20px;
+    margin: 20px auto;
+    padding: 25px;
     border-radius: 20px;
 }
 
@@ -330,7 +381,8 @@ textarea::placeholder {
     font-size: 16px;
 }
 
-.send-message-to-sushant .form-div .form textarea:focus, input:focus{
+.send-message-to-sushant .form-div .form textarea:focus,
+input:focus {
     outline: none;
 }
 
@@ -382,5 +434,29 @@ textarea::placeholder {
     }
 }
 
+
+@media screen and (min-width:900px) {
+    .school-img-2{
+        display: none;
+    }
+    
+    .anne-image-2{
+        display: none;
+    }
+}
+
+@media screen and (max-width:899px) {
+    .school-img-1{
+        display: none;
+    }
+
+    .anne-image-1{
+        display: none;
+    }
+
+    .about-sec div {
+        padding: 10px 20px;
+    }
+}
 
 /* ============================== Media query end ============================ */

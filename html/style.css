@@ -1,0 +1,26 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+/* font-family: 'Noto Sans JP', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400&display=swap');
+/* font-family: 'Hind Siliguri', sans-serif; */
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+.heading-of-the-page h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
