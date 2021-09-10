@@ -49,7 +49,6 @@ hr {
 .home-sus-heading {
     font-size: 4.5rem;
     text-shadow: 5px 5px 20px black;
-    margin-bottom: 20px
 
 }
 
@@ -87,6 +86,16 @@ hr {
     }
 }
 
+@media only screen and (max-width:1000px) {
+    .home-sus-heading{
+        transform: translateY(-70px);
+    }
+
+    .home-sus-paragraph {
+        transform: translateY(-40px);
+    }
+}
+
 
 /* ==================================== ABOUT SECTION ================================================= */
 
@@ -100,8 +109,7 @@ hr {
 .about-sec h1 {
     text-align: center;
     font-size: 3rem;
-    padding-bottom: 10px;
-    padding-top:15px;
+    padding: 25px 20px 20px 20px;
 }
 
 .about-sec div {
@@ -123,7 +131,7 @@ hr {
 }
 
 @media only screen and (min-width:768px) {
-    
+
     .about-sec .know-of-loco .wdg4-loco .wdg4-loco-img {
         border-radius: 30px;
         max-width: 100%;
@@ -205,7 +213,23 @@ h4 {
     border-radius: 20px;
 }
 
-.regular-update{
+.heading-for-school-9-class{
+    font-size: 1.4rem;
+}
+
+.school-8-class-heading{
+    font-size: 1.4rem;
+}
+
+.school-life-for-h3{
+    font-size: 1.4rem;
+}
+
+.know-of-loco-contain-h1{
+    font-size: 1.4rem;
+}
+
+.regular-update {
     text-align: center;
 }
 
@@ -214,25 +238,28 @@ h4 {
 
 
 .my-friends {
-    padding: 25px;
+    padding: 20px;
     margin: 20px auto;
     border-radius: 20px;
 }
 
 .my-friends .friends-start h2 {
     font-size: 3rem;
+    margin-top: 20px;
 }
 
 .my-friends p {
     font-size: 18px;
 }
 
-.life-should-be{
+.life-should-be {
     text-align: center;
+    padding: 10px;
+    margin-bottom: 18px;
 }
 
 .my-friends div {
-    padding: 20px 20px 20px 20px;
+    padding: 10px 20px;
     margin: 10px 0px 20px 0px;
 }
 
@@ -253,59 +280,59 @@ h4 {
     width: 40%;
 }
 
+.my-friend-akshat-heading {
+    font-size: 1.4rem;
+}
+
+.my-friend-manogya-heading {
+    font-size: 1.4rem;
+}
+
 
 /* ======================================= contact ========================================== */
 
-.contact-sec {
-    padding: 25px;
-    margin: 20px auto;
-    border-radius: 20px;
-    text-align: center;
-}
-
-.contact-sec .contact-add {
+.contact-add {
     background-image: linear-gradient(to right, #FFFFFF, #F5F5F5);
     border-radius: 40px;
     padding: 20px;
+    text-align: center;
 }
 
-.contact-sec .contact-add h1 {
+.contact-add h1 {
     padding: 10px;
     font-size: 1.7rem;
 }
 
-.contact-sec .contact-add address {
+.contact-add address {
     padding: 10px;
 }
 
-.contact-sec .contact-add address a {
+.contact-add address a {
     text-decoration: none;
     font-size: 20px;
     font-weight: 700;
     color: rgb(0, 122, 255);
 }
 
-.contact-sec .contact-add address a:hover {
+.contact-add address a:hover {
     text-decoration: underline;
 }
 
 
 /* ======================================= footer ========================================= */
 
-footer {
-    background-color: rgb(235, 235, 235);
-    margin: 0px;
+footer{
+    background-color:  rgb(15, 15, 15);
 }
 
 footer div {
     text-align: center;
-    background-image: linear-gradient(to right, #FFFFFF, #F5F5F5);
-
-    padding: 40px 20px 40px 20px;
+    padding: 20px;
 }
 
 footer div {
-    font-size: 17px;
+    font-size: 19px;
+    color: rgb(240, 240, 240);
 }
 
 
@@ -313,9 +340,9 @@ footer div {
 
 .send-message-to-sushant {
     background-color: rgb(235, 235, 235);
-    margin: 20px auto;
+    margin: 20px auto 0px auto;
     padding: 25px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .message-all {
@@ -344,7 +371,7 @@ textarea::placeholder {
 }
 
 .send-message-to-sushant .form-div .form input[type=text] {
-    width: 90%;
+    width: 80%;
     padding: 8px 20px;
     margin: 8px auto;
     display: block;
@@ -356,7 +383,7 @@ textarea::placeholder {
 }
 
 .send-message-to-sushant .form-div .form input[type=email] {
-    width: 90%;
+    width: 80%;
     padding: 8px 20px;
     margin: 8px auto;
     display: block;
@@ -368,7 +395,7 @@ textarea::placeholder {
 }
 
 .send-message-to-sushant .form-div .form textarea {
-    width: 90%;
+    width: 80%;
     height: 150px;
     margin: auto;
     display: block;
@@ -408,6 +435,21 @@ input:focus {
     color: black;
 }
 
+@media screen and (max-width:700px){
+    
+    .send-message-to-sushant .form-div .form textarea {
+        width: 90%;
+    }
+
+    .send-message-to-sushant .form-div .form input[type=email] {
+        width: 90%;
+    }
+
+    .send-message-to-sushant .form-div .form input[type=text] {
+        width: 90%;
+    }
+}
+
 
 /* ============================== Media query start ============================ */
 
@@ -437,26 +479,30 @@ input:focus {
 
 
 @media screen and (min-width:900px) {
-    .school-img-2{
+    .anne-image-2 {
         display: none;
     }
-    
-    .anne-image-2{
+}
+
+@media screen and (min-width:1000px) {
+    .school-img-2 {
         display: none;
     }
 }
 
 @media screen and (max-width:899px) {
-    .school-img-1{
-        display: none;
-    }
-
-    .anne-image-1{
+    .anne-image-1 {
         display: none;
     }
 
     .about-sec div {
         padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width:999px) {
+    .school-img-1 {
+        display: none;
     }
 }
 

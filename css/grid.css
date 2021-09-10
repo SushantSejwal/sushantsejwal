@@ -17,9 +17,6 @@
         height: auto;
     }
 
-    .locomotive-in-delhi-wdg4 {
-        font-size: 1.5rem;
-    }
 
 }
 
@@ -41,15 +38,12 @@
         height: auto;
     }
 
-    .heading-for-school-9-class h3 {
-        font-size: 1.5rem;
-    }
 }
 
 
 /* ========================= grid - 3 ========================= */
 
-@media only screen and (min-width:1100px) {
+@media only screen and (min-width:1000px) {
     .school-life-start {
         display: grid;
         grid-template-columns: repeat(2);
@@ -64,9 +58,6 @@
         height: auto;
     }
 
-    .school-life-for-h3 h3 {
-        font-size: 1.5rem;
-    }
 }
 
 /* ========================= grid - 4 ========================= */
@@ -112,11 +103,7 @@
         height: auto;
     }
 
-    .my-friend-akshat-heading h2 {
-        font-size: 1.5rem;
-    }
-
-    .akshat-img.akshat-img-1{
+    .akshat-img.akshat-img-1 img{
         padding: 0px;
         margin: 0px;
         transform: scale(1.3);
