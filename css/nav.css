@@ -38,6 +38,7 @@ nav {
     font-size: 1.7rem;
     font-weight: 600;
     display: block;
+    text-align: center;
 }
 
 .main-name a:hover {
@@ -121,7 +122,12 @@ nav {
 
     .main-name {
         width: 100%;
+        justify-content: center;
+    }
+
+    .main-name a {
         text-align: center;
+       margin: 0px 23%;
     }
 
     /* ============================== Toggle button ============================== */
@@ -144,7 +150,6 @@ nav {
         background-color: black;
         height: 100vh;
         align-items: center;
-        /* justify-content: center; */
         transition: all 0.5s ease-in-out;
     }
 
